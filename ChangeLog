@@ -1,3 +1,56 @@
+2002-09-06 15:53  Dave Dribin <dave@dribin.org>
+
+	* README:
+	
+	Use CPAN email address
+
+2002-09-06 15:52  Dave Dribin <dave@dribin.org>
+
+	* Changes:
+	
+	Added 1.01 changes
+
+2002-09-06 15:29  Dave Dribin <dave@dribin.org>
+
+	* lib/Palm/Zetetic/Strip.pm, lib/Palm/Zetetic/Strip/Account.pm,
+	lib/Palm/Zetetic/Strip/CryptV05i.pm,
+	lib/Palm/Zetetic/Strip/CryptV10.pm,
+	lib/Palm/Zetetic/Strip/System.pm, lib/Palm/Zetetic/Strip/Util.pm,
+	lib/Palm/Zetetic/Strip/Version.pm,
+	lib/Palm/Zetetic/Strip/PDB/AccountsV05i.pm,
+	lib/Palm/Zetetic/Strip/PDB/AccountsV10.pm,
+	lib/Palm/Zetetic/Strip/PDB/ParserFactory.pm,
+	lib/Palm/Zetetic/Strip/PDB/PasswordV05i.pm,
+	lib/Palm/Zetetic/Strip/PDB/PasswordV10.pm,
+	lib/Palm/Zetetic/Strip/PDB/SystemsV05i.pm,
+	lib/Palm/Zetetic/Strip/PDB/SystemsV10.pm, tools/set_version.sh:
+	
+	Bump version number
+
+2002-09-06 15:29  Dave Dribin <dave@dribin.org>
+
+	* tools/gen-rpm.sh:
+	
+	Add cpan2rpm script
+
+2002-09-06 15:29  Dave Dribin <dave@dribin.org>
+
+	* Makefile.PL:
+	
+	Add AUTHOR and RPM make target
+
+2002-09-06 15:25  Dave Dribin <dave@dribin.org>
+
+	* MANIFEST.SKIP:
+	
+	Skip signature files
+
+2001-07-12 22:02  Dave Dribin <dave@dribin.org>
+
+	* lib/Palm/Zetetic/Strip.pm:
+	
+	Fixed type in SYNOPOSIS documentation.
+
 2001-07-11 12:54  Dave Dribin <dave@dribin.org>
 
 	* .cvsignore:

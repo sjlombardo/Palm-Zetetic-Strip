@@ -9,7 +9,7 @@ require Exporter;
 use vars qw(@ISA $VERSION);
 
 @ISA = qw(Exporter);
-$VERSION = "1.00";
+$VERSION = "1.01";
 
 =head1 NAME
 
@@ -27,8 +27,8 @@ Palm::Zetetic::Strip - Manipulate Zetetic Strip Palm database files
   }
 
   $strip->load();
-  $systems = $strip->get_systems();
-  $accounts = $strip->get_accounts($systems->[0]);
+  @systems = $strip->get_systems();
+  @accounts = $strip->get_accounts($systems[0]);
 
 =head1 DESCRIPTION
 

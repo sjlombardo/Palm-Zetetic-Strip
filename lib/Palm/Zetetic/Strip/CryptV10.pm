@@ -10,7 +10,7 @@ use vars qw(@ISA $VERSION);
 require Exporter;
 
 @ISA = qw(Palm::Raw);
-$VERSION = "1.00";
+$VERSION = "1.01";
 
 sub new
 {
