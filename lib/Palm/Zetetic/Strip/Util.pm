@@ -8,7 +8,7 @@ require Exporter;
 
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(hexdump null_split true false);
-$VERSION = "1.01";
+$VERSION = "1.02";
 
 sub true
 {

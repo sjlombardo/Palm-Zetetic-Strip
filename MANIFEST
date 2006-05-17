@@ -30,3 +30,4 @@ t/data/v0.5i/StripSystems-SJLO.pdb
 t/data/v1.0/StripAccounts-SJLO.pdb
 t/data/v1.0/StripPassword-SJLO.pdb
 t/data/v1.0/StripSystems-SJLO.pdb
+META.yml                                 Module meta-data (added by MakeMaker)

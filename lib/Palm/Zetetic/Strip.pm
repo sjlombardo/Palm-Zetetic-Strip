@@ -9,7 +9,7 @@ require Exporter;
 use vars qw(@ISA $VERSION);
 
 @ISA = qw(Exporter);
-$VERSION = "1.01";
+$VERSION = "1.02";
 
 =head1 NAME
 
