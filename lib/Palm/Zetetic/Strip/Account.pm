@@ -44,12 +44,14 @@ sub new
     bless $self, $class;
     $self->{system}     = "";
     $self->{username}   = "";
+    $self->{service}    = "";
     $self->{password}   = "";
     $self->{system_id}  = "";
     $self->{comment}    = "";
 
     $self->{system}     = $args{system} if defined($args{system});
     $self->{username}   = $args{username} if defined($args{username});
+    $self->{service}    = $args{service} if defined($args{service});
     $self->{password}   = $args{password} if defined($args{password});
     $self->{system_id}  = $args{system_id} if defined($args{system_id});
     $self->{comment}    = $args{comment} if defined($args{comment});
@@ -84,6 +86,12 @@ sub get_username
 {
     my ($self) = @_;
     return $self->{username};
+}
+
+sub get_service
+{
+    my ($self) = @_;
+    return $self->{service};
 }
 
 =head2 get_password

@@ -86,6 +86,7 @@ sub get_accounts
         $account =
             new Palm::Zetetic::Strip::Account("system" => $system,
                                               "username" => $username,
+                                              "service" => $service,
                                               "password" => $password,
                                               "system_id" => $system_id,
                                               "comment" => $comment);

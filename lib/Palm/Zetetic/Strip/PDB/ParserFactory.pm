@@ -121,7 +121,7 @@ sub set_available_versions
     # Attempt to load all hash/crypt modules and record their success
     $found_md5      = load_module("Digest::MD5");
     $found_idea     = load_module("Crypt::IDEA");
-    $found_sha256   = load_module("Digest::SHA256");
+    $found_sha256   = load_module("Digest::SHA");
     $found_rijndael = load_module("Crypt::Rijndael");
 
     # Version 0.5i uses MD5 and IDEA

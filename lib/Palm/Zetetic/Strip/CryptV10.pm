@@ -2,7 +2,7 @@ package Palm::Zetetic::Strip::CryptV10;
 
 use strict;
 use Carp;
-use Digest::SHA256;
+use Digest::SHA qw (sha256);
 use Crypt::Rijndael;
 
 use vars qw(@ISA $VERSION);
@@ -73,17 +73,11 @@ sub hash
     my ($self, $string) = @_;
     my $hash;
 
-    if ($Digest::SHA256::VERSION == "0.01")
-    {
-        my $digest;
+    $hash = sha256($string);
 
-        $digest = Digest::SHA256::new();
-        $hash = $digest->hash($string);
-
-        # For some reason SHA256 returns 512 bits. Truncate to
-        # 256 bits.  The last 256 bits appear to be garbage.
-        $hash = substr($hash, 0, 32);
-    }
+    # For some reason SHA256 returns 512 bits. Truncate to
+    # 256 bits.  The last 256 bits appear to be garbage.
+    $hash = substr($hash, 0, 32);
 
     return $hash;
 }
